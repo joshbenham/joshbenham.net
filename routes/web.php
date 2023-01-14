@@ -17,5 +17,5 @@ Route::get('/', \App\Http\Livewire\Home::class)->name('home');
 Route::get('/resume', \App\Http\Livewire\Resume::class)->name('resume');
 Route::get('/uses', \App\Http\Livewire\Uses::class)->name('uses');
 Route::get('/goals', \App\Http\Livewire\Goals::class)->name('goals');
-Route::get('/contact', \App\Http\Livewire\Contact::class)->name('contact');
+Route::get('/contact', \App\Http\Livewire\ContactPage::class)->name('contact');
 Route::get('/sitemap.xml', fn () => response()->view('sitemap')->header('Content-Type', 'application/xml'))->name('sitemap');
