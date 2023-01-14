@@ -6,7 +6,7 @@ use App\Http\Livewire\ContactPage;
 use Livewire\Livewire;
 use Tests\TestCase;
 
-class ContactTest extends TestCase
+class ContactPageTest extends TestCase
 {
     /** @test */
     public function the_page_can_be_viewed()
