@@ -9,14 +9,14 @@ use Tests\TestCase;
 class GoalsPageTest extends TestCase
 {
     /** @test */
-    public function the_page_can_be_viewed()
+    public function the_page_can_be_viewed(): void
     {
         $this->get(route('goals'))
             ->assertOk();
     }
 
     /** @test */
-    public function the_component_can_render()
+    public function the_component_can_render(): void
     {
         Livewire::test(GoalsPage::class)
             ->assertStatus(200);

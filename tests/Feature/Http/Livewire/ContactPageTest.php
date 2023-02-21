@@ -9,21 +9,21 @@ use Tests\TestCase;
 class ContactPageTest extends TestCase
 {
     /** @test */
-    public function the_page_can_be_viewed()
+    public function the_page_can_be_viewed(): void
     {
         $this->get(route('contact'))
             ->assertOk();
     }
 
     /** @test */
-    public function the_component_can_render()
+    public function the_component_can_render(): void
     {
         Livewire::test(ContactPage::class)
             ->assertStatus(200);
     }
 
     /** @test */
-    public function the_component_can_validate()
+    public function the_component_can_validate(): void
     {
         Livewire::test(ContactPage::class)
             ->set('name', '')
@@ -42,7 +42,7 @@ class ContactPageTest extends TestCase
     }
 
     /** @test */
-    public function the_component_can_submit()
+    public function the_component_can_submit(): void
     {
         Livewire::test(ContactPage::class)
             ->set('name', 'John Doe')

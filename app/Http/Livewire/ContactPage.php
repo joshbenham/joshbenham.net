@@ -7,9 +7,13 @@ use App\Models\Contact;
 class ContactPage extends \Livewire\Component
 {
     public string $name = '';
+
     public string $email = '';
+
     public string $phone = '';
+
     public string $subject = '';
+
     public string $message = '';
 
     protected array $rules = [
