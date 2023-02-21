@@ -37,7 +37,7 @@
             />
 
             @error('name')
-                <div class$message }}</div>
+                <div class="text-red-500">{{ $message }}</div>
             @enderror
         </label>
 
@@ -52,7 +52,7 @@
             />
 
             @error('email')
-                <div class$message }}</div>
+                <div class="text-red-500">{{ $message }}</div>
             @enderror
         </label>
 
@@ -67,7 +67,7 @@
             />
 
             @error('phone')
-                <div class$message }}</div>
+                <div class="text-red-500">{{ $message }}</div>
             @enderror
         </label>
 
@@ -82,7 +82,7 @@
             />
 
             @error('subject')
-                <div class$message }}</div>
+                <div class="text-red-500">{{ $message }}</div>
             @enderror
         </label>
 
